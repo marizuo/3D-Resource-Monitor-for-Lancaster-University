@@ -34,7 +34,7 @@ full_wifi_data['time'] = pd.to_datetime(full_wifi_data['time'])
 
 app = dash.Dash(
     __name__,)
-cache = Cache(app.server, config={  # Initialises the Cache! Used to memoize the compute-intensive functions so that they are not repeatedly ran.
+cache = Cache(app.server, config={  # Initialises the Cache! Used to memoize the compute-intensive functions so that they are not repeatedly ran, improving response times.
     'CACHE_TYPE': 'simple',
 })
 
@@ -556,7 +556,7 @@ app.layout = html.Div(
     url : 'https://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Dark_Gray_Base/MapServer/' // Imports the grey baselayer, ideal for colouring features as the colours pop out.
     }));
     tileset = viewer.scene.primitives.add(new Cesium.Cesium3DTileset({
-    url : 'https://storage.googleapis.com/tilesetcesium/tileset.json',})); // Imports the tileset hosted on Google Storage
+    url : 'tileset.json',})); // Imports the tileset - NOTE NOT INCLUDED IN GITHUB PROJECT DUE TO PRIVATE DATA, MUST CREATE YOURSELF OR CONTACT AUTHOR
     viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(1.5, -0.5, 1400)); // Zoom to the tileset (campus)
     viewer.scene.globe.enableLighting = true;
     viewer.clock.currentTime =  Cesium.JulianDate.fromIso8601("20190707T180000+0100"); 
