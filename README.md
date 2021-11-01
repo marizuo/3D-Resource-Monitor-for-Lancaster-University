@@ -11,3 +11,40 @@ The dashboard itself is based on the Dash by Plotly library, and uses the additi
 This is a novel implementation as the time dynamic element is created in Dash and creates temporal 3D display in Cesium. This allows server side manipulation, filtering of the consumption data which would be unwieldy to do client-side, allowing building adminstrators and other staff to use it on lightweight devices (phones, tablets)
 
 This project was deployed onto Google Cloud Platform.
+
+
+Dashboard sample:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139739689-d8e45f2f-cadb-430d-88c0-72f89dcfbc15.png" />
+</p>
+
+
+Building Occupancy example: 3d, interactive:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139739506-7c957cd3-df57-4a81-b711-72a9d3ac86b5.png" />
+</p>
+
+
+
+OSM campus map:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139740394-741d2108-cd61-4cd3-8b60-c263e16aa05a.png" />
+</p>
+
+
+Matching via OSM:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139739310-9bbfc5bc-641a-4143-afcc-8fcce7f2a532.png" />
+</p>
+
+
+
+FME data flow: 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139739368-8debba86-f9ec-47d7-8e32-5c050c077cb8.png" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/52913193/139739407-d99ea067-d72c-4d9a-a1f3-34188d57d62b.png" />
+</p>
+
